@@ -1,5 +1,7 @@
 # Acknowledgement:
-# Code based on https://georeferenced.wordpress.com/2013/01/15/rwordcloud/
+#   Code based on https://georeferenced.wordpress.com/2013/01/15/rwordcloud/
+#
+#   Modified by: Jim Duggan, July 2016.
 #
 
 library(tm)
@@ -18,7 +20,7 @@ words<-tm_map(words,removeWords,"using")
 words<-tm_map(words,removeWords,"use")
 words<-tm_map(words,removeWords,"said")
 
-png("ulysses.png", width=1000,height=1000)
+png("./textmining/images/ulysses.png", width=1000,height=1000)
 
 wordcloud(words, 
           scale=c(3.5,0.8), 
